@@ -21,6 +21,15 @@ public class mainNespresso {
 //	recibe y se añade a la cafetera la cantidad de café indicada.
 	
 	public static void main(String[] args) {
-		
+		cafetera nespresso=new cafetera();
+		nespresso.setCantidadActual(500);
+		nespresso.setCapacidadMaxima(5000);
+		nespresso.servirTaza(600);
+		nespresso.llenarCafetera();
+		nespresso.servirTaza(600);
+		nespresso.vaciarCafetera();
+		nespresso.agregarCafe(6000);
+		nespresso.servirTaza(6000);
+		nespresso.agregarCafe(500);
 	}
 }
