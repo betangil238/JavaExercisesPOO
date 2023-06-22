@@ -18,6 +18,17 @@ public class mainCuenta {
 //		h) Método consultarDatos(): permitirá mostrar todos los datos de la cuenta
 	public static void main(String[] args) {
 		
+		cuentaService cs=new cuentaService();
+		cuenta cuenta1= cs.crearCuenta();
+		cuenta1.consultarDatos();
+		cuenta1.consultarSaldo();
+		
+		cuenta1.extraccionRapida();
+		cuenta1.ingresar(20000);
+		cuenta1.retirar(30000);
+		cuenta1.consultarDatos();
+		cuenta1.consultarSaldo();
+		
 
 	}
 
