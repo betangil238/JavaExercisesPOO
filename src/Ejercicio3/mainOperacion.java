@@ -10,7 +10,6 @@ public class mainOperacion {
 //	en los atributos del objeto.
 //	e) Método sumar(): calcular la suma de los números y devolver el resultado al main.
 //	f) Método restar(): calcular la resta de los números y devolver el resultado al main
-//
 //	g) Método multiplicar(): primero valida que no se haga una multiplicación por cero, si
 //	fuera a multiplicar por cero, el método devuelve 0 y se le informa al usuario el error.
 //	Si no, se hace la multiplicación y se devuelve el resultado al main
@@ -18,8 +17,13 @@ public class mainOperacion {
 //	una división por cero, el método devuelve 0 y se le informa al usuario el error se le
 //	informa al usuario. Si no, se hace la división y se devuelve el resultado al main.
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		operacionService os= new operacionService();
+		operacion operador=os.crearOperacion();
+		double suma=operador.sumar(operador.getNum1(), operador.getNum2());
+		double resta=operador.restar(operador.getNum1(), operador.getNum2());
+		double multiply=operador.multiplicar(operador.getNum1(), operador.getNum2());
+		double divide=operador.dividir(operador.getNum1(), operador.getNum2());
+		System.out.println("+: "+suma+"  -:"+resta+"  *: "+multiply+"   /:"+divide);
 	}
 
 }
