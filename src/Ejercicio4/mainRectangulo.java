@@ -11,6 +11,13 @@ public class mainRectangulo {
 //	Superficie = base * altura / Perímetro = (base + altura) * 2.
 	
 	public static void main(String[] args) {
+		rectanguloService rs= new rectanguloService();
+		
+		rectangulo rectangulo1= rs.crearRectangulo();
+		int area= rs.areaRectangulo(rectangulo1);
+		int perimetro=rs.perimetroRectangulo(rectangulo1);
+		rs.dibujarrectangulo(rectangulo1);
+		System.out.println("Area="+ area+ " Perimetro="+perimetro);
 		
 	} 
 	
