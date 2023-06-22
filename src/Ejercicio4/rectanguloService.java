@@ -21,7 +21,6 @@ public class rectanguloService {
 	}
 	
 	public void dibujarrectangulo(rectangulo rectangle) {
-		String asterisco = "*";
 		String space="";
 		String wordbase="";
 		for (int j=0;j<rectangle.getBase();j++) {
