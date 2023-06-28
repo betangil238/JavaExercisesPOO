@@ -14,7 +14,15 @@ public class MainMatematica {
 //	Antes de calcular la raíz cuadrada se debe obtener el valor absoluto del número.
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		Matematica matematicas=new Matematica();
+		int num1=(int) Math.floor(Math.random()*100);
+		int num2=(int) Math.floor(Math.random()*100);
+		matematicas.setNum1(num1);
+		matematicas.setNum2(num2);
+		matematicas.devolverMayor();
+		double number=matematicas.calcularPotencia();
+		System.out.println("La potencia es: "+ number);
+		matematicas.calculaRaiz();
 
 	}
 
