@@ -1,4 +1,4 @@
-package ExtraJercicio1;
+package ExtraEjercicio1;
 
 public class MainCancion {
 //	1. Desarrollar una clase Cancion con los siguientes atributos: titulo y autor. Se deberá́
