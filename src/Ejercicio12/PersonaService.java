@@ -34,7 +34,7 @@ public class PersonaService {
 	}
 	
 	public void mostrarPersona(Persona persona) {
-		System.out.println("El nombre es: "+persona.getNombre()+" la fecha es: "+persona.getFecha());
+		System.out.println("El nombre es: "+persona.getNombre()+" la fecha de nacimiento es: "+persona.getFecha());
 		
 	}
 
