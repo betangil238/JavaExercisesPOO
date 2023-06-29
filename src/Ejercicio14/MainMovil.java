@@ -1,6 +1,6 @@
 package Ejercicio14;
 
-public class MainTelefono {
+public class MainMovil {
 //	14. Una tienda que vende teléfonos móviles quiere tener registro de cada producto que
 //	posee en un sistema computacional. Para ello, crearemos un programa donde se pueda
 //	almacenar cada producto con su información. Crear una entidad Movil con los atributos
@@ -16,8 +16,9 @@ public class MainTelefono {
 //	números de un celular. Para ello, puede utilizarse un bucle repetitivo
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		MovilService ms= new MovilService();
+		Movil celular=ms.cargarCelular();
+		System.out.println(celular.toString());
 	}
 
 }

@@ -28,7 +28,5 @@ public class MainCurso {
 		Curso curso= cs.crearCurso();
 		double ganancia=cs.calcularGananciaSemanal(curso);
 		System.out.println("La ganancia obtenida es de: "+ganancia);
-
 	}
-
 }
