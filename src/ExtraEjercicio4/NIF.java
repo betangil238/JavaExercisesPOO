@@ -1,4 +1,4 @@
-package ExtraEjercio4;
+package ExtraEjercicio4;
 
 public class NIF {
 	

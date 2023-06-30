@@ -1,4 +1,4 @@
-package ExtraEjercio4;
+package ExtraEjercicio4;
 
 public class MainNIF {
 //	Dígito Verificador. Crear una clase NIF que se usará para mantener DNIs con su
