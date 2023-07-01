@@ -62,5 +62,16 @@ public class MainAhorcado {
 //	Mensaje: Lo sentimos, no hay más oportunidades
 public static void main(String[] args) {
 	
+	AhorcadoService as= new AhorcadoService();
+	Ahorcado ahorcado=as.crearJuego();
+	ahorcado.encontradas("a");
+	ahorcado.encontradas("a");
+	ahorcado.encontradas("h");
+	ahorcado.intentos();
+	ahorcado.encontradas("o");
+	ahorcado.encontradas("l");
+	ahorcado.intentos();
+	
+	
 }
 }
