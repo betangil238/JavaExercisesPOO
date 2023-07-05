@@ -42,6 +42,13 @@ public class Alquiler {
 	public void setPrecio(double precio) {
 		this.precio = precio;
 	}
+	@Override
+	public String toString() {
+		return "[películaAlquilada=" + películaAlquilada + ", fechaInicio=" + fechaInicio + ", fechaFin="
+				+ fechaFin + ", precio=" + precio + "]";
+	}
+	
+	
 	
 	
 	

@@ -7,7 +7,7 @@ public class AlquilerService {
 	Scanner leer= new Scanner(System.in);
 	
 	public Alquiler CrearAlquiler() {
-		System.out.println("Porfavor ingrese la pelicula alquilada");
+		System.out.println("Porfavor ingrese la pelicula a alquilar");
 		String pelicula= leer.next();
 		System.out.println("Ingrese el dia,mes,ano de inicio del alquiler");
 		int dia= leer.nextInt();
@@ -20,7 +20,7 @@ public class AlquilerService {
 		int ano1= leer.nextInt();
 		Date fechaFinal=new Date(ano1-1900, mes1-1, dia1);
 		double precio;
-		int dias=(fechaFinal.getYear()-fechainicio.getYear())*(12*30)+(fechaFinal.getMonth()-fechainicio.getMonth())*(30)+(fechaFinal.getDay()-fechainicio.getDay());
+		int dias=(fechaFinal.getYear()-fechainicio.getYear())*(12*30)+(fechaFinal.getMonth()-fechainicio.getMonth())*(30)+(fechaFinal.getDate()-fechainicio.getDate());
 		if (dias<=3) {
 			precio=10;
 		}else {

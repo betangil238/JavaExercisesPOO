@@ -49,6 +49,12 @@ public class Pelicula {
 	public void setDuracion(String duracion) {
 		this.duracion = duracion;
 	}
+
+	@Override
+	public String toString() {
+		return "[titulo=" + titulo + ", genero=" + genero + ", ano=" + ano + ", duracion=" + duracion + "]";
+	}
+	
 	
 	
 
